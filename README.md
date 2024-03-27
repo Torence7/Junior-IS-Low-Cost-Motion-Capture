@@ -1,6 +1,6 @@
 # Junior-IS-Low-Cost-Motion-Capture
 
-## Install Modules
+## Install Modules for 3D Human Pose Estimation
 
 To use the functionalities provided in this project, you need to install the following Python modules:
 
