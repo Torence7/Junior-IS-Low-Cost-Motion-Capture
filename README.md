@@ -7,3 +7,9 @@ To use the functionalities provided in this project, you need to install the fol
 ### OpenCV
 ```bash
 pip install opencv-python
+```
+
+### Mediapipe
+```bash
+pip install mediapipe==0.10.9
+```
