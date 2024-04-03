@@ -13,7 +13,7 @@ pip install opencv-python
 ```bash
 pip install mediapipe==0.10.9
 ```
-### Description of pose_estimation.py
+### Stepwise Description of pose_estimation.py
 1. Initializes a video capture device (webcam) and sets the resolution.
 2. Initializes MediaPipe models for pose estimation and hand detection.
 3. Captures frames from the video feed.
