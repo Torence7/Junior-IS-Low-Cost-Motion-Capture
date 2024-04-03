@@ -56,6 +56,7 @@ LineCode.cs is responsible for rendering a line between two points in the scene 
 
 
 ### Todo List:
+All the main features for the project have been implemented. These are improvements on some of the features.
 - Update LineCode.cs to display differents line widths for the hand models as compared to the body model.
 - Add a central stage in the form of a white floor for the model to be rendered on.
 - Work on finiding th appropriate offset for the hand models so that they correspond with the wrist of the body model.
