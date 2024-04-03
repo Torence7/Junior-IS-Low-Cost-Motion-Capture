@@ -25,7 +25,7 @@ pip install mediapipe==0.10.9
 9. Teminates the program when 'q' is pressed.
 
 ### Stepwise Description of UDPReceive.cs:
-
+The Unity script, "UDPReceive", sets up a UDP client to receive data asynchronously. It runs a separate thread to continuously listen for incoming data on the specified port. When data is received, it converts the byte array into a UTF-8 encoded string and stores it in the data variable. Optionally, it can print the received data to the console.
 
 ### Description of Tracking.cs:
 This C# Unity script, named "Tracking", is designed to receive data via UDP (User Datagram Protocol) and update the positions of various body joint obejects created in Unity accordingly. Here's a summary of what the code does:
@@ -37,10 +37,12 @@ This C# Unity script, named "Tracking", is designed to receive data via UDP (Use
 5. The Update() method is defined, which is called once per frame by Unity.
 
 Within the Update() method:
+
 6. The script retrieves the UDP data received by udpReceive and removes the leading and trailing characters (as they are delimiters).
-7. The data is split into individual points using the comma as a delimiter.
+8. The data is split into individual points using the comma as a delimiter.
 
 For each body joint (33 in total):
+
 8. The X, Y, and Z coordinates are extracted from the data and multiplied by 1.5 for scaling.
 9. The local position of the corresponding GameObject in the bodyJoints array is updated with the new coordinates.
 10. Similar operations are performed for the left and right hand joints (21 in each), with an additional offset applied to adjust their positions.
