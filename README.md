@@ -13,3 +13,4 @@ pip install opencv-python
 ```bash
 pip install mediapipe==0.10.9
 ```
+### pose_estimation.py
