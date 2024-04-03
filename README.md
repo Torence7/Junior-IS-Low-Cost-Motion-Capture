@@ -53,3 +53,12 @@ LineCode.cs is responsible for rendering a line between two points in the scene 
 
 - In the Start() method, it initializes the LineRenderer component and sets its width.
 - In the Update() method, it updates the positions of the line's start and end points to match the positions of the origin and destination transforms, respectively.
+
+
+### Todo List:
+- Update LineCode.cs to display differents line widths for the hand models as compared to the body model.
+- Add a central stage in the form of a white floor for the model to be rendered on.
+- Work on finiding th appropriate offset for the hand models so that they correspond with the wrist of the body model.
+- Try creating a head for the skeletal model (in the form of a big sphere)
+- Make lines cylindrical instead of 2d to enhance the skeletons appearnace.
+- Work on finding permanent scene camera settings to avoid having to adjust the camera manually.
