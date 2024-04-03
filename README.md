@@ -24,7 +24,7 @@ pip install mediapipe==0.10.9
 8. Displays the processed frame with overlayed skeleton.
 9. Teminates the program when 'q' is pressed.
 
-### Stepwise Description of UDPReceive.cs:
+### Description of UDPReceive.cs:
 The Unity script, "UDPReceive", sets up a UDP client to receive data asynchronously. It runs a separate thread to continuously listen for incoming data on the specified port. When data is received, it converts the byte array into a UTF-8 encoded string and stores it in the data variable. Optionally, it can print the received data to the console.
 
 ### Description of Tracking.cs:
@@ -46,3 +46,10 @@ For each body joint (33 in total):
 8. The X, Y, and Z coordinates are extracted from the data and multiplied by 1.5 for scaling.
 9. The local position of the corresponding GameObject in the bodyJoints array is updated with the new coordinates.
 10. Similar operations are performed for the left and right hand joints (21 in each), with an additional offset applied to adjust their positions.
+
+
+### Description of LineCode.cs:
+LineCode.cs is responsible for rendering a line between two points in the scene when displatying the rudimentary skeletal model. It requires two transforms: one representing the origin point and another representing the destination point of the line.
+
+- In the Start() method, it initializes the LineRenderer component and sets its width.
+- In the Update() method, it updates the positions of the line's start and end points to match the positions of the origin and destination transforms, respectively.
