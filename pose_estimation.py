@@ -79,7 +79,7 @@ with mp_pose.Pose(
             for lm in landmark_list:
                 data.extend([lm[0], height - lm[1], lm[2]])
 
-        # Prepare hand landmarks data for sending
+        # Prepare hand landmarks data for sending and determine which hand is left and right
         if hand_results.multi_hand_landmarks:
             left_hand_present = False
             right_hand_present = False
