@@ -1,3 +1,13 @@
+// This project takes inspiration and adapts some approaches from the YouTube video titled 
+// "3d Hand Tracking in Virtual Environment Computer Vision". This project's procedure utilises 
+// this video's approach to sending data to Unity as well as approaches to rendering a model 
+// representation using pose estimation data. Given that this video only explores motion capture 
+// for a single hand, this project extends the methodology outlined in the video by incorporating 
+// the capability to model and perform pose estimation on the full human body and either one hand 
+// or both hands simultaneously. The software of this project also utilises the OpenCV and Mediapipe Library 
+// documentation as a guide on how to achieve the aforementioned pose estimation goals.
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
