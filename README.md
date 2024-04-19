@@ -57,6 +57,9 @@ LineCode.cs is responsible for rendering a line between two points in the scene 
 - In the Update() method, it updates the positions of the line's start and end points to match the positions of the origin and destination transforms, respectively.
 
 
+All the C# code is attached to individual objects (spheres and lines) in the Unity environent to enable functionality. To enable the application to run, the Unity Environment must be runnign whilst pose estimation is active. The data is continously read into the environment to enable the model to replicate movements.
+
+
 ### Todo List:
 All the main features for the project have been implemented. These are improvements on some of the features.
 - Update LineCode.cs to display differents line widths for the hand models as compared to the body model.
